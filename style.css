@@ -121,6 +121,7 @@ p {
 
 .metricas-container {
     align-items: center;
+    margin: 64px 0 0;
 }
 
 .metricas-content {
@@ -137,7 +138,6 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
     gap: 12px;
 }
 
@@ -164,5 +164,34 @@ p {
     font-size: 16px;
     color: var(--text-color);
     text-align: left;
+}
 
+.vagas-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 96px 112px;
+}
+
+.vagas-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.vagas-content span {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: var(--main-color);
+}
+
+.vagas-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.vagas-imagem {
+    width: 100%;
 }
