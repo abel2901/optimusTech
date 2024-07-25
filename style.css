@@ -37,7 +37,6 @@ nav {
 }
 
 .cabecalho__menu__nome {
-    font-family: "Inter";
     font-size: 18px;
     font-weight: 500;
     color: #3A404E;
@@ -118,4 +117,52 @@ p {
     font: "Inter";
     text-align: center;
     color: var(--text-color);
+}
+
+.metricas-container {
+    align-items: center;
+}
+
+.metricas-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0 32px 0 32px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+}
+
+.metricas-content-informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 12px;
+}
+
+.metricas-content-numero {
+    font-size: 60px;
+    color: var(--main-color);
+    font-family: 'Inter';
+    font-weight: 600;
+    text-align: left;
+}
+
+.metricas-content-titulo {
+    font-weight: 500;
+    font-size: 18px;
+    color: #101828;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+.metricas-content-texto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: left;
+
 }
