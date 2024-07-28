@@ -12,8 +12,8 @@
 }
 
 body {
-    /* width: 100%;
-    height: 100vh; */
+    width: 100%;
+    height: 100vh; 
 }
 
 .cabecalho {
@@ -27,16 +27,6 @@ nav {
     align-items: center;
 }
 
-.cabecalho__logo {
-    display: flex;
-    gap: 8px;
-}
-
-.cabecalho__menu__logo {
-    width: 27px;
-    height: 26.99px;
-}
-
 .cabecalho__menu__nome {
     font-size: 18px;
     font-weight: 500;
@@ -44,42 +34,25 @@ nav {
     padding-top: 2px;
 }
 
-.cabecalho__menu__links {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.cabecalho__menu__link {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "Inter";
-    font-style: normal;
-    color: var(--text-color);
-    gap: 40px;
-    text-decoration: none;
-}
-
-.cabecalho__botao__entrar {
-    font-size: 16px;
+.links a {
     color: var(--text-color);
     text-decoration: none;
-    font-weight: 500;
-    font-family: "Inter";
-    text-align: center;
-    padding: 10px 18px 10px 18px;
-
+    margin-right: 2rem;
 }
 
-.cabecalho__botao__cadastrar {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "Inter";
-    border-radius: 8px;
-    text-decoration: none;
-    color: #FFFFFF;
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+button.cadastrar {
     background-color: var(--main-color);
-    padding: 10px 18px 10px 18px;
+    color: #FFF;
 }
 
 .cabecalho-container {
@@ -98,7 +71,6 @@ nav {
 }
 
 span {
-    font-family: "Inter";
     font-family: 16px;
     font-weight: 600;
     color: var(--main-color);
@@ -107,7 +79,6 @@ span {
 
 h1 {
     font-size: 48px;
-    font-family: "Inter";
     font-weight: 600;
     color: #101828;
 }
@@ -115,7 +86,6 @@ h1 {
 p {
     font-size: 20px;
     font-weight: 400;
-    font: "Inter";
     text-align: center;
     color: var(--text-color);
 }
@@ -145,7 +115,6 @@ p {
 .metricas-content-numero {
     font-size: 60px;
     color: var(--main-color);
-    font-family: 'Inter';
     font-weight: 600;
     text-align: left;
 }
@@ -155,12 +124,10 @@ p {
     font-size: 18px;
     color: #101828;
     font-weight: 500;
-    font-family: 'Inter', sans-serif;
     text-align: left;
 }
 
 .metricas-content-texto {
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: var(--text-color);
@@ -184,14 +151,12 @@ p {
 .vagas-content span {
     font-size: 14px;
     font-weight: 500;
-    font-family: 'Inter', sans-serif;
     color: var(--main-color);
 }
 
 .vagas-content h2 {
     font-size: 36px;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
 }
 
 .vagas-imagem {
@@ -208,14 +173,12 @@ p {
 }
 
 .area-vaga span {
-    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #101828;
 }
 
 .titulo-vaga {
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: #101828;
 }
@@ -288,7 +251,6 @@ p {
 }
 
 .perfil-nome {
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -297,7 +259,6 @@ p {
 }
 
 .perfil-funcao {
-    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -320,7 +281,71 @@ h4 {
     font-weight: 500;
 }
 
-.forms{
-    width: 22%;
-    height: 48px;
+footer input {
+    outline: none;
+    border: 1px solid #D0D5DD;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    width: 12rem;
+    margin-right: 1rem;
+}
+
+/* responsividade */
+
+.sideMenu {
+    display: none;
+    visibility: hidden;
+}
+
+.menu.active {
+    right: 0;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu .links a {
+    margin-bottom: 2rem;
+}
+
+.sideMenu img {
+    position: relative;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.sideMenu {
+    display: initial;
+    visibility: visible;
+}
+
+.links {
+  margin: 2rem 0;
+}
+
+.links a {
+  margin-right: 0;
+}
+
+.menu {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  height: 100vh;
+  background: #F9FAFB;
+  width: 15rem;
+  padding: 2rem;
+  transition: all 2s;
+}
+.menu .links, .menu .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
