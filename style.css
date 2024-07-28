@@ -171,6 +171,7 @@ p {
     flex-direction: column;
     text-align: center;
     margin: 96px 112px;
+    gap: 32px;
 }
 
 .vagas-content {
@@ -194,4 +195,53 @@ p {
 
 .vagas-imagem {
     width: 100%;
+}
+
+.area-vaga {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 64px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.area-vaga span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #101828;
+}
+
+.titulo-vaga {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #101828;
+}
+
+.lista-vaga {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 30px;
+}
+
+.titulo-vaga {
+    font-size: 18px;
+    font-weight: 500;
+    color: #101828;
+    font-family: 'Inter', sans-serif;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.informacoes span {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #667085;
 }
