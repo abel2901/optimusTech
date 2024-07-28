@@ -230,7 +230,6 @@ p {
     font-size: 18px;
     font-weight: 500;
     color: #101828;
-    font-family: 'Inter', sans-serif;
 }
 
 .informacoes {
@@ -242,6 +241,65 @@ p {
 .informacoes span {
     font-weight: 500;
     font-size: 16px;
-    font-family: 'Inter', sans-serif;
     color: #667085;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+
+.depoimentos-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.depoimentos-content h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.informacoes-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-foto {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px 50px 50px 50px;
+    opacity: 0px;
+    align-items: center;
+}
+
+.perfil-nome {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #101828;
+}
+
+.perfil-funcao {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #667085;
+        
 }
